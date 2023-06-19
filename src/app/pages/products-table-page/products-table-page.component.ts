@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable, tap} from "rxjs";
-import {IProduct} from "../../models/product";
 import {ProductsService} from "../../services/products.service";
 import {Title} from "@angular/platform-browser";
 

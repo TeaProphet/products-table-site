@@ -1,21 +1,21 @@
 <nz-table #basicTable [nzData]="products">
   <thead>
-  <tr>
-    <th>Изображение</th>
-    <th>Название</th>
-    <th>Категория</th>
-    <th>Цена</th>
-    <th>Рейтинг</th>
-  </tr>
+    <tr>
+      <th>Изображение</th>
+      <th>Название</th>
+      <th>Категория</th>
+      <th>Цена</th>
+      <th>Рейтинг</th>
+    </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let data of basicTable.data">
+    <tr [routerLink]="'/product/' + data.id" *ngFor="let data of basicTable.data">
 
-    <td><img nz-image [nzSrc]="data.image" [alt]="data.title" class="productImage"></td>
-    <td><a nz-typography [routerLink]="'/product/' + data.id">{{ data.title }}</a></td>
-    <td>{{ data.category }}</td>
-    <td><span nz-typography>{{ data.price | currency:'RUB' }}</span></td>
-    <td>{{ data.rating.rate }}</td>
-  </tr>
+      <td><img src="{{data.image}}" [alt]="data.title" class="productImage"></td>
+      <td>{{ data.title }}</td>
+      <td>{{ data.category }}</td>
+      <td><span nz-typography>{{ data.price | currency:'RUB' }}</span></td>
+      <td>{{ data.rating.rate }}</td>
+    </tr>
   </tbody>
 </nz-table>
