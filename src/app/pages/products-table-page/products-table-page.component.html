@@ -8,6 +8,6 @@
   <link rel="stylesheet" type="text/css" href="products-table-page.component.css">
 </head>
 <body>
-  <p *ngIf="loading" class="loadingPanel">Загрузка...</p>
+  <nz-spin style="align-self: center" *ngIf="loading"></nz-spin>
   <app-products-table *ngIf="!loading" [products]="productsService.products"></app-products-table>
 </body>

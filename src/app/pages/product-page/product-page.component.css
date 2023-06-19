@@ -1,0 +1,11 @@
+.pageContent {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nz-spin {
+  align-self: center;
+}

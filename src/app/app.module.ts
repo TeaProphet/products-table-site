@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -20,6 +19,7 @@ import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzIconModule} from "ng-zorro-antd/icon";
 import {NzTypographyModule} from "ng-zorro-antd/typography";
 import {NzImageModule} from "ng-zorro-antd/image";
+import {NzSpinModule} from "ng-zorro-antd/spin";
 
 registerLocaleData(ru);
 
@@ -43,7 +43,8 @@ registerLocaleData(ru);
     NzIconModule,
     NzTypographyModule,
     NzImageModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NzSpinModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: ru_RU }

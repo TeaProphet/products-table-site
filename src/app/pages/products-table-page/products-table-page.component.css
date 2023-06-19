@@ -1,4 +1,11 @@
-.loadingPanel{
-  font-size: 1.125rem;
-  text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nz-spin {
+  align-self: center;
 }
