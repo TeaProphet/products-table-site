@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
 # Description
-Simple products catalog. If you click at title or product - you will be redirected to page of product.
+Simple products catalog. If you click at row with product - you will be redirected to page of product.
 
 ## Development server
 
