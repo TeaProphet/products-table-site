@@ -1,0 +1,12 @@
+<p *ngIf="loading" class="loadingPanel">Загрузка...</p>
+
+<div *ngIf="!loading">
+  <button nz-button nzType="primary" [routerLink]="'/'">
+    <span nz-icon nzType="left"></span>
+    Назад
+  </button>
+
+  <app-product
+    [product]="productsService.searchedProduct"
+  ></app-product>
+</div>

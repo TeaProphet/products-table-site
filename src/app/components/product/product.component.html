@@ -1,0 +1,14 @@
+<div class="product">
+  <img nz-image [nzSrc]="product.image" [alt]="product.title" class="productImage">
+  <nz-divider></nz-divider>
+  <h2 nz-typography class="productTitle">{{product.title}}</h2>
+  <nz-divider></nz-divider>
+  <p nz-typography>Цена: <span nz-typography [ngStyle]="{fontWeight: 'bold'}">{{product.price | currency:'RUB'}}</span></p>
+  <nz-divider></nz-divider>
+
+  <p nz-typography>{{product.description}}</p>
+  <nz-divider></nz-divider>
+  <p nz-typography>Рейтинг: <span nz-typography [ngStyle]="{fontWeight: 'bold'}">
+    {{product.rating.rate | number: '1.1-1'}}
+  </span></p>
+</div>
